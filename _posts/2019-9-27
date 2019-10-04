@@ -1,0 +1,28 @@
+if and else statements (else if) c#
+
+
+
+int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a > 0)
+            {
+                if (b > 0)
+                { Console.WriteLine("A is Posotive and so is B");
+                    Console.ReadLine();
+                }
+                else
+                { Console.WriteLine("A is posotive B is not");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                if (b > 0)
+                { Console.WriteLine("B is Posotive and A is negative");
+                    Console.ReadLine();
+                }
+                else
+                { Console.WriteLine("A is negative and so is B");
+                    Console.ReadLine();
+                }
+            }
