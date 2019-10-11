@@ -1,0 +1,17 @@
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 0;
+            int number;
+            Console.WriteLine("choose a number");
+            number = Convert.ToInt32(Console.ReadLine());
+            int Nnumber = number;
+            do
+            { Nnumber = Nnumber * number;
+                Console.WriteLine(Nnumber);
+                Console.ReadLine();
+                x++;
+            }
+            while (x < 20);
