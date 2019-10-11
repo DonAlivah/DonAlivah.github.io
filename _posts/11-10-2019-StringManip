@@ -1,0 +1,21 @@
+finds the length of a string
+              string sample = "triskaideckaphobia";
+              int size = sample.Length;
+              Console.WriteLine("triskaideckaphobia is " + size + " letters long");
+              Console.ReadLine();
+              
+creates and allows the use of substrings:
+
+            Console.WriteLine("enter a sentence");
+            string sentence = Console.ReadLine();
+            string extract = sentence.Substring(3, 5);
+            Console.WriteLine(extract);
+            Console.ReadLine();*/
+
+coverts the case
+            Console.WriteLine("enter a sentence");
+            string text = Console.ReadLine();
+            text = text.ToUpper();
+            Console.WriteLine(text);
+            Console.ReadLine();
+        
