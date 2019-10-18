@@ -1,0 +1,23 @@
+ this is an example of an array
+ 
+ int[] numbers = new int[100];
+            Random random = new Random();
+            for (int i = 0; i <= 99; i++) 
+            {
+                numbers[i] = random.Next(1, 100);
+                Console.WriteLine(numbers[i]);
+                Console.ReadLine();
+                int total = numbers.Sum() ;
+                int min = numbers.Min();
+                int max = numbers.Max();
+                //int total = 0;
+                //for (int j = 0; j < numbers.Length; j++)
+                //{
+                //    total = total + numbers[i];
+                //}
+                //int total = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9] + numbers[10] + numbers[11] + numbers[12] + numbers[13] + numbers[14] + numbers[15] + numbers[16] + numbers[17] + numbers[18] + numbers[19] + numbers[20] + numbers[21] + numbers[22] + numbers[23] + numbers[24] + numbers[25] + numbers[26] + numbers[27] + numbers[28] + numbers[29] + numbers[30] + numbers[31] + numbers[32] + numbers[33] + numbers[34] + numbers[35] + numbers[36] + numbers[37] + numbers[38] + numbers[39] + numbers[40] + numbers[42] + numbers[43] + numbers[44] + numbers[45] + numbers[46] + numbers[1] + numbers[1] ...;
+                int avarage = total / 100;
+                if (i==99)
+                {
+                    Console.WriteLine("avarage=" + avarage + " this min value=" + min + " max value=" + max);
+                    Console.ReadLine();
