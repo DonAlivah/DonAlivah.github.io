@@ -18,4 +18,25 @@ coverts the case
             text = text.ToUpper();
             Console.WriteLine(text);
             Console.ReadLine();
+            
+            
+adds a parity bit to the end of 7 bit binary   
+            int count = 0;
+            Console.WriteLine("enter a 7 bit binary number");
+            string binary = Console.ReadLine();
+            for (int i = 0; i < (binary.Length); i++)
+            {
+             if (binary.Substring(i, 1) == "1")
+                { count++; }
+            }
+            if (count%2==0)
+            { string parity = "0";
+                Console.WriteLine(binary + parity);
+                Console.ReadLine();
+            }
+            else
+            { string parity = "1";
+                Console.WriteLine(binary + parity);
+                Console.ReadLine();
+            }
         
