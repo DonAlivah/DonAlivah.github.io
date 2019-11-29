@@ -1,0 +1,41 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            triangle();
+
+            for (int i = 0; i < 3; i++)
+			{
+                segment();
+			}
+                    
+            
+            trunk(6);
+            Console.Read();
+        }
+
+        public static void triangle()
+        {   
+            Console.WriteLine("        xx");
+            Console.WriteLine("       xxxx");
+            Console.WriteLine("      xxxxxx");
+            Console.WriteLine("     xxxxxxxx");
+            
+        }
+
+        public static void trunk(int length)
+        { 
+            for (int i = 0; i < length; i++)
+			{
+                Console.WriteLine("       xxxx");
+			}
+            
+        }
+
+        public static void segment()
+        {
+            Console.WriteLine("    xxxxxxxxxx");
+            Console.WriteLine("   xxxxxxxxxxxx");
+            Console.WriteLine("  xxxxxxxxxxxxxx");
+            Console.WriteLine(" xxxxxxxxxxxxxxxx");
+        }
