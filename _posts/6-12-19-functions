@@ -1,0 +1,13 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("hello backwards is" + Reverse(" hello"));
+            Console.WriteLine("computing backwards is" + Reverse(" computing"));
+            Console.WriteLine("program backwards is" + Reverse(" program"));
+            Console.ReadLine();
+        }
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
