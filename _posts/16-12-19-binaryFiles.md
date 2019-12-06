@@ -1,0 +1,10 @@
+int i = 25;
+            double d = 3.1415926;
+            bool b = true;
+            string s = "i'm happy";
+            BinaryWriter bw = new BinaryWriter(new FileStream("my data", FileMode.Create));
+            bw.Write(i);
+            bw.Write(d);
+            bw.Write(b);
+            bw.Write(s);
+            bw.Close();
